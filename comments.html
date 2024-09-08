@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/comments.css">
+</head>
+<body>
+    <main>
+<h1>Cервис комментариев со спам фильтром</h1>
+<section>
+<div>
+    <h2>Оставьте ваш комментарий</h2>
+<form action="comments.html" method="post">
+
+    <div class="chekboxes">
+        <label for="question"> Показывать ваше имя?</label>
+        <input type="checkbox" id="yes" name="question" class="checkbox"> Да
+        <input type="checkbox" id="no" name="question" class="checkbox"> Нет
+    </div>
+
+    <label for="name" class="font" id="labelName">Введите ваше Имя:</label>
+    <p class="font"><input class="border" type="text" name="name" id="name"></p>
+
+    <label for="photo" class="font">Введите ссылку вашего аватара:</label>
+    <p class="font"><input class="border" type="url" name="photo" id="photo"></p>
+
+    <p class="font">Оставьте комментарий:</p>
+    <textarea class="border" id="comment" name="comment" cols="80" rows="6"></textarea>
+</form>
+<div><button class="btn" id="buttonSend">Отправить</button></div>
+</div>
+<div class="chat">
+    <h2>Чат</h2>
+    <div class="block">
+    <img id="addPhoto" src="" alt=""></img>
+    <div>
+    <p id="addName" class="font"></p>
+    <p id="commentDate" class="font"></p>
+    <p id="addComment" class="font"></p>
+    </div>
+</div>
+</div>
+</section>
+    </main>
+    <script src="./comments.js"></script>
+</body>
+</html>
